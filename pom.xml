@@ -7,6 +7,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>ch0-dependency</module>
+        <module>ch1-web-module</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-boot-guide</name>
