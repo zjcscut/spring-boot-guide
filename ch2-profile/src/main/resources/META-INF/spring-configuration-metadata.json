@@ -1,0 +1,9 @@
+{
+  "properties": [
+    {
+      "name": "app.author",
+      "type": "java.lang.String",
+      "description": "The author of app."
+    }
+  ]
+}
