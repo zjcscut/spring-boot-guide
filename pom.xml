@@ -9,6 +9,8 @@
         <module>ch0-dependency</module>
         <module>ch1-web-module</module>
         <module>ch2-profile</module>
+        <module>ch4-embedded-tomcat-deploy</module>
+        <module>ch3-tomcat-deploy</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-boot-guide</name>
@@ -53,7 +55,7 @@
                 <version>${maven.compiler.plugin.version}</version>
                 <configuration>
                     <source>${maven.compiler.source}</source>
-                    <target>${maven.compiler.target</target>
+                    <target>${maven.compiler.target}</target>
                     <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
             </plugin>
