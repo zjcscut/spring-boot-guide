@@ -11,6 +11,7 @@
         <module>ch2-profile</module>
         <module>ch4-embedded-tomcat-deploy</module>
         <module>ch3-tomcat-deploy</module>
+        <module>ch10086-excel-export</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-boot-guide</name>
