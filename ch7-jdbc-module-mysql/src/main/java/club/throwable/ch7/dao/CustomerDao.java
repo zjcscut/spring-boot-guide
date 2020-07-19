@@ -111,7 +111,7 @@ public class CustomerDao {
         return customer;
     }
 
-    private static ResultSetExtractor<List<Customer>> MULTI = rs -> {
+    private static final ResultSetExtractor<List<Customer>> MULTI = rs -> {
         List<Customer> result = new ArrayList<>();
         while (rs.next()) {
             result.add(convert(rs));
@@ -119,5 +119,5 @@ public class CustomerDao {
         return result;
     };
 
-    private static ResultSetExtractor<Customer> SINGLE = rs -> rs.next() ? convert(rs) : null;
+    private static final ResultSetExtractor<Customer> SINGLE = rs -> rs.next() ? convert(rs) : null;
 }
