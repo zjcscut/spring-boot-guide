@@ -9,6 +9,9 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.time.OffsetDateTime;
+import java.util.List;
+
 /**
  * @author throwable
  * @version v1.0
@@ -40,5 +43,6 @@ public class Ch8Application implements CommandLineRunner {
         newCustomer.setCustomerName("little throwable");
         int i = customerDao.insertSelective(newCustomer);
         log.info("Insert [name=little throwable],result:{}", objectMapper.writeValueAsString(newCustomer));
+        List<Customer> customers = customerDao.selectByCreateTime(OffsetDateTime.now(), OffsetDateTime.now());
     }
 }

@@ -4,6 +4,9 @@ import club.throwable.ch8.entity.Customer;
 import club.throwable.ch8.repository.mapper.CustomerMapper;
 import org.apache.ibatis.annotations.Param;
 
+import java.time.OffsetDateTime;
+import java.util.List;
+
 /**
  * @author throwable
  * @version v1.0
@@ -13,4 +16,8 @@ import org.apache.ibatis.annotations.Param;
 public interface CustomerDao extends CustomerMapper {
 
     Customer queryByName(@Param("customerName") String customerName);
+
+
+    List<Customer> selectByCreateTime(@Param("startCreateTime") OffsetDateTime startCreateTime,
+                                      @Param("endCreateTime") OffsetDateTime endCreateTime);
 }

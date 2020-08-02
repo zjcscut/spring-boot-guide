@@ -12,4 +12,11 @@
         WHERE customer_name = #{customerName}
     </select>
 
+    <select id="selectByCreateTime" resultMap="BaseResultMap">
+        SELECT *
+        FROM customer
+        WHERE create_time <![CDATA[>=]]> #{startCreateTime}
+          AND create_time <![CDATA[<=]]> #{endCreateTime}
+    </select>
+
 </mapper>
