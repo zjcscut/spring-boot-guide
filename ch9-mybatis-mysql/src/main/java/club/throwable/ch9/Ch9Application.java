@@ -40,7 +40,7 @@ public class Ch9Application implements CommandLineRunner {
         order.setOrderId(UUID.randomUUID().toString());
         int insert = orderMapper.insert(order);
         log.info("写入{}条订单数据,id:{}", insert, order.getId());
-        ZoneId zoneId = ZoneId.of("Asia/Shanghai");
+        ZoneId zoneId = ZoneId.of("UTC+8");
         OffsetDateTime end = OffsetDateTime.now(zoneId);
         OffsetDateTime start = end.plusMonths(-1L);
         List<Order> orders = orderMapper.selectByDuration(start, end);

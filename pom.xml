@@ -17,6 +17,7 @@
         <module>ch7-jdbc-module-mysql</module>
         <module>ch8-mybatis</module>
         <module>ch9-mybatis-mysql</module>
+        <module>ch10-jpa-mysql</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-boot-guide</name>
